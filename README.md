@@ -7,9 +7,12 @@ Objective:
   * fork() :white_check_mark:
   * kill()
   * execve()
-  * fork()
-  * fork()
-  * fork()
+  * signal()
+  * kill()
+  * access()
+  * getcwd()
+  * stat()
+  * wait()
 2. Understand their functionality and their purposes.
 3. man page 2
 4. Build the program without using printf (unless you made yourself one ^.^)

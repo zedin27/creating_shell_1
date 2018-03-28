@@ -6,7 +6,7 @@
 /*   By: 42vecmac <42vecmac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 12:51:13 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/03/28 14:40:18 by 42vecmac2        ###   ########.fr       */
+/*   Updated: 2018/03/28 15:01:01 by 42vecmac2        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@
 ** 24 SIGSTOP	->	Stop Pause the process; cannot be trapped
 ** 25 SIGTSTP	->	Terminal stop Pause the process; can be
 ** 26 SIGCONT	->	Continue Run a stopped process
+** test
 */
 
 int main(void)

@@ -6,7 +6,7 @@
 /*   By: 42vecmac <42vecmac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 12:51:13 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/03/28 15:01:01 by 42vecmac2        ###   ########.fr       */
+/*   Updated: 2018/03/30 14:56:58 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,14 @@
 ** test
 */
 
-int main(void)
+void handle_sigint(int sig)
 {
+	printf("Caught signal %d\n", sig);
+}
 
+int main()
+{
+	signal(SIGINT, handle_sigint);
+	while (1) ;
+	return 0;
 }

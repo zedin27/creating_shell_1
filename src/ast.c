@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_fork.c                                        :+:      :+:    :+:   */
+/*   ast.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/26 16:29:19 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/03/30 14:52:03 by ztisnes          ###   ########.fr       */
+/*   Created: 2018/03/30 14:51:27 by ztisnes           #+#    #+#             */
+/*   Updated: 2018/04/01 21:12:02 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,5 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <wait.h>
-
-/* Understanding how the system call fork() works */
-
-int main(void)
-{
-	pid_t p;
-
-	p = fork();
-	printf("I'm the parent #0\n");
-	if (p > 0)
-		printf("I'm the parent #1\n");
-	if (p == 0)
-		printf("I'm the child #0\n");
-}
+#include <backend.h>
+#include <error.h>
